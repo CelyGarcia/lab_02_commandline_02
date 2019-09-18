@@ -19,7 +19,7 @@ $ echo hello
 Copy and paste the output below.
 ----------
 
-
+hello
 
 ==========
 2. Type:
@@ -29,7 +29,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
-
+hello there
 
 ==========
 3. Type:
@@ -39,6 +39,14 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
+ echo good mornin'
+> 
+> 
+> 
+> echo good mornin'
+
+
+good mornin
 
 
 ==========
@@ -47,7 +55,7 @@ Copy and paste the output below.
 Type [CTRL + C] to get your prompt back.
 ----------
 
-
+Franciscos-iMac:~ franciscogarcia$ echo good mornin'
 
 ==========
 5. Say good mornin' again with quotes!
@@ -56,7 +64,8 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+ 
+good morning
 
 
 ==========
@@ -66,6 +75,9 @@ $ echo *
 
 What happens?
 ----------
+A list of my computer has shown.
+
+Applications Creative Cloud Files Desktop Documents Downloads Library Movies Music Pictures Public
 
 
 
@@ -74,7 +86,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+ctrl + c
 
 
 ==========
@@ -88,7 +100,7 @@ $ curl google.com
 Copy and paste the output below.
 ----------
 
-
+curl: (6) Could not resolve host: google.comm
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -98,6 +110,7 @@ $ curl www.google.com
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
 
+><title>Google</title>
 
 
 ==========
@@ -106,15 +119,15 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-
+$ -a curl google.html
+-bash: -a: command not found
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
-
+At this point, I am not sure where I'm at. 
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
