@@ -39,14 +39,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
- echo good mornin'
-> 
-> 
-> 
-> echo good mornin'
-
-
-good mornin
+>
 
 
 ==========
@@ -55,7 +48,7 @@ good mornin
 Type [CTRL + C] to get your prompt back.
 ----------
 
-Franciscos-iMac:~ franciscogarcia$ echo good mornin'
+$ echo good mornin'
 
 ==========
 5. Say good mornin' again with quotes!
@@ -100,7 +93,12 @@ $ curl google.com
 Copy and paste the output below.
 ----------
 
-curl: (6) Could not resolve host: google.comm
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -119,15 +117,17 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-$ -a curl google.html
--bash: -a: command not found
+$ -o curl google.html www.google.com
 
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:100 12614    0 12614    0     0   114k      0 --:--:-- --:--:-- --:--:--  114k
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-At this point, I am not sure where I'm at. 
+/Users/student/Desktop
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
@@ -135,7 +135,7 @@ At this point, I am not sure where I'm at.
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd -
 
 ==========
 13. So... the lab materials are located at this url:
@@ -151,7 +151,9 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:--100   162  100   162    0     0   4263      0 --:--:-- --:--:-- --:--:--  4263
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -190,7 +192,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -212,7 +214,7 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+already did it.
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -220,7 +222,7 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-
+already answered.
 
 ==========
 21. Now compress it!  Type:
@@ -230,6 +232,7 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
+gzip: can't stat: stuff.tar (stuff.tar): No such file or directory
 
 
 ==========
@@ -243,6 +246,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
+
 
 
 ==========
