@@ -22,55 +22,74 @@ cd /
 
 cd or cd ~
 
+
+
 ==========
 3. Write the command that you would use to change to your Desktop folder.
 ----------
 
-cd ..
+cd /Users/student/Desktop
 
 ==========
 4. What's the absolute path to your home directory?
 ----------
 
-~
+/Users/student
 
 ==========
 5. What's the absolute path to your Desktop directory?
 ----------
 ~/Desktop
 
-type cd, then drag a folder from Finder, and drop in terminal
+/Users/student/Desktop
 
 ==========
 6. What's the absolute path to your Desktop directory?
 ----------
 
-already answer.
+already answer in question 5.
 
 ==========
 7. If you're in your home directory, what's the relative path to your Desktop directory?
 ----------
 
-cd
+Desktop
 
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
 ----------
 
-../..
+:Desktop student$ mkdir Desktop/stuff
 
 
 ==========
 9. If you're in your root directory, how would you create a new directory on your desktop called more-stuff without changing your directory?  Write your command below.
 ----------
 
-..
+v314-ent-002:/ student$ mkdir / Desktop/more-stuff
+mkdir: /: Is a directory
+mkdir: Desktop: No such file or directory
+v314-ent-002:/ student$ ls Desktop
+ls: Desktop: No such file or directory
+v314-ent-002:/ student$ cd
+v314-ent-002:~ student$ ls Desktop
+09192018
+Desktop
+Fire-Force-Season-2-release-date-Enen-no-Shouboutai-manga’s-ending-leaves-room-for-anime-sequel-Spoilers.jpg
+Lissette Reyes-Croatia
+PACAT.gif
+Share 1 Read Only
+Share 2 Read-Write
+Sound Effects Server
+Student Temporary Work
+v314-ent-002:~ student$ 
 
 ==========
 10. If you're in your Desktop directory, how would you create a new directory on your desktop called even-more-stuff?  Write your command below.
 ----------
 
-mv
+ mkdir even-more-stuff
+
 
 ==========
 11. If you're in your home directory, how would you change to the directory right above it using a relative path (it should bring you to /Users)?  Write your command below.
@@ -82,20 +101,20 @@ mv
 12. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
-cd
+cd .. 
 
 ==========
 13. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/profesor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
-"cd~"
+cd -
 
 
 ==========
 14. How would you show all of the files (including hidden ones) with detailed (long) information that are on you're Desktop if you're in your home directory?  Write your command below.
 ----------
 
-ls -a
+ls -al Desktop
 
 ==========
 Optional Challenge:
